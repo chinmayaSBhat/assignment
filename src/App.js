@@ -1,24 +1,22 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import PlaceSearch from './PlaceSearch';
+import Roomselector from './Roomselector';
+import Slotselector from './Slotselector';
+import Button from './Button';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+     <ul >
+       <li><PlaceSearch/></li>
+       <li><Slotselector/></li>
+       <li><Roomselector/></li>
+       <li><Button/></li>
+       </ul>
+      
     </div>
   );
 }
